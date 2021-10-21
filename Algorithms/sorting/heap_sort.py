@@ -42,6 +42,7 @@ HEAPSORT(A)
 T(n) = O(nlogn) 
 
 
+Priority Queue - return the most priority val and add last val to the A[1] and sort again because of the heap_size--
 
 HEAP_EXTRACT_MAX(A)
 
@@ -53,6 +54,9 @@ HEAP_EXTRACT_MAX(A)
         return max
 
 T(n) = O(logn)
+
+
+Normally insert the val where it should be in the tree
 
 HEAP_INSERT(A, key)
 
