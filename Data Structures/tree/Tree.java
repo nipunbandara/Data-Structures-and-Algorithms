@@ -48,6 +48,7 @@ public class Tree {
         }
     }
 
+    //ascending order
     public void inOrder(Node localRoot){
         if(localRoot != null){
             inOrder(localRoot.leftChild);
@@ -55,6 +56,15 @@ public class Tree {
             inOrder(localRoot.rightChild);
         }
     
+    }
+
+    //descending order
+    public void discOrder(Node localRoot){
+        if(localRoot != null){
+            descOrder(localRoot.rightChild);
+            localRoot.displayNode();
+            descOrder(localRoot.leftChild);
+        }
     }
 
     public void preOrder(Node localRoot){
